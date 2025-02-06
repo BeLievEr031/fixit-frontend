@@ -11,7 +11,10 @@ const useAuthStore = create((set) => ({
     //     role: "worker"
     // },
     user: null,
-    setUser: (user) => set({ user }),
+    setUser: (user) => {
+        console.log(user);
+        return set({ user })
+    },
 }))
 
 

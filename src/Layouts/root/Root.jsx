@@ -6,7 +6,9 @@ import { useEffect } from "react";
 // import useAuthStore from "../../store/user-store";
 function Root() {
   // Otherwise Move to auth page
-  const { setUser } = useAuthStore();
+  const { user, setUser } = useAuthStore();
+
+  console.log(user);
 
   const handleSelfRoute = async () => {
     const { data } = await self();

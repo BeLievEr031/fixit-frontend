@@ -1,6 +1,6 @@
 import { Flex } from "antd";
 import BidTable from "./components/BidTable";
-import WorkerTable from "./components/WorkerTable";
+// import WorkerTable from "./components/WorkerTable";
 import { useQuery } from "@tanstack/react-query";
 import { getDashboard, getLastProblemEntry } from "../../http/api";
 function Dashboard() {
@@ -71,7 +71,7 @@ function Dashboard() {
           </p>
         </div>
 
-        <div
+        {/* <div
           style={{
             backgroundColor: "lightblue",
             width: "200px",
@@ -87,7 +87,7 @@ function Dashboard() {
         >
           <h2>Paid Amount</h2>
           <p style={{ fontSize: "50px", margin: "0" }}>02</p>
-        </div>
+        </div> */}
       </Flex>
 
       <Flex
